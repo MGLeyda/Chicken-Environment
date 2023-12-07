@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1">
+	<title>Add Food</title>
+	<!-- the form awesome library is used to add icons to our form -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<!-- include the stylesheet file -->
+	<link href="/add_food.css" rel="stylesheet" type="text/css">
+	
+</head>
+<html>
+	<body>
+		<div class="add_food">
+            <br />
+             <<<a href="/home"> Back</a>
+			<center>
+			<h1>Add Food</h1>
+			<form action="/add_food" method="post">
+				<h2>Date Added :  </h2>
+				<input type="date" name = "addDate" required/>
+                <h2>Enter the number of cups added</h2>
+                <input type="text" name="add_food" placeholder="Enter Cups of Food" id="add_food" required>
+                <h2>cups</h2>
+				<input type="submit" value="Submit">
+			</form>
+		</center>
+		</div>
+	</body>
+</html>

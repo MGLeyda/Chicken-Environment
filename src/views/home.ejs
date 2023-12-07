@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+      <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="/home.css" rel="stylesheet" type="text/css">
+        <center>
+        <% if (display) { %>
+            <div class="bar">!!! ALERT !!! OUTSIDE TEMPERATURE OUT OF RANGE</div>
+        <% } %>
+      </center>
+	</head>
+      <div class="home">
+            <h1>Home</h1>
+            <form action = "/home" method="post">
+            <h2>Email: </h2>
+            <h2> <%= email %></h2>
+            <br />
+            <br />
+            <h2>Number of Chickens: </h2>
+            <h2><%= numChickens %></h2>
+            <a href="/edit_chickens">Edit</a>
+            <br />
+            <br />
+            <h2>Minimum Temperature: </h2>
+            <h2><%= minTemp %> </h2>
+            <h2> °F</h2>
+            <a href="/edit_minTemp">Edit</a>
+            <br />
+            <br />
+            <h2>Maximum Temperature:   </h2>
+            <h2> <%= maxTemp %></h2>
+            <h2>°F</h2>
+            <a href="/edit_maxTemp">Edit</a>
+            <br />
+            <br />
+            <a href="/add_food">Add A Feeding</a>
+            <br />
+            <br />
+            </form>
+
+      </div>
+</html>
+
